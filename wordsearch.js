@@ -13,7 +13,7 @@ const transpose = function (matrix) {
     return arr;
   };
 const wordSearch = (letters, word) => { 
-    if (letters.length === 0) {
+    if (letters.length === 0 || !word) {
         return false;
     }
     const horizontalJoin = letters.map(ls => ls.join(''));
